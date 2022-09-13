@@ -1,0 +1,53 @@
+.tab {
+    grid-area: tab;
+}
+
+.list {
+    grid-area: list;
+    background-color: rgb(248,248,248);
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 6% 6% 81% 7%;
+    grid-template-areas:
+        "header"
+        "tab"
+        "list"
+        "footer";
+}
+
+.switchAds button {
+    background-color: inherit;
+    float: left;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 17px 15px 17px 15px;
+    font-size: 100%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.switchAds button:hover {
+    background-color: rgb(75, 174, 254);
+}
+
+.ads {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card_body {
+    grid-template-columns: 1fr 5fr;
+    margin: 1%;
+    background-color: white;
+}
+
+.info_ad {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}

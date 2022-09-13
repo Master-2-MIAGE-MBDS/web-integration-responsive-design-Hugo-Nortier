@@ -1,0 +1,73 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+div {
+    font-family: Arial;
+}
+
+header {
+    grid-area: header;
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.bluebg {
+    background-color: rgb(33, 150, 243)
+}
+
+.d-flex,
+.dflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.d-flex>* {
+    align-self: center;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 130%;
+    font-weight: normal;
+}
+
+h1,
+footer h3 {
+    margin-left: 1em;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small {
+    font-size: small;
+}

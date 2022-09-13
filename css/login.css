@@ -1,0 +1,81 @@
+.greybg {
+    grid-area: intro;
+    background-color: rgb(207, 216, 220);
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 7% 36% 50% 7%;
+    grid-template-areas:
+        "header"
+        "intro"
+        "form"
+        "footer";
+}
+
+.form-section {
+    grid-area: form;
+}
+
+.svg {
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+h2 + p {
+    margin-top: 0;
+}
+img + h2 {
+    margin-bottom: 0;
+}
+
+.form-section div {
+    height: 90%;
+    width: 80%;
+    padding: 2% 10%;
+}
+
+input {
+    width: 95%;
+    background-color: rgb(241, 245, 247);
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1% 3%;
+    border: 0;
+}
+
+input:first-child{
+    margin-bottom: 10px;
+}
+input::placeholder {
+    font: 15px/3 Arial;
+}
+
+.signin {
+    margin-bottom: 20px;
+    margin-top: auto;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1500px) {
+    input {
+        padding: 2% 5%;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    input {
+        padding: 4% 6%;
+    }
+    .svg {
+        width: 25%;
+        height: 25%;
+    }
+}

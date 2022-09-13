@@ -1,0 +1,30 @@
+/**
+    Cette media query propose une version Desktop 
+    de la page de listing d'annonces
+*/
+@media screen and (min-width: 640px) {
+
+    .ads,
+    .card_body,
+    .flex-start {
+        display: flex;
+    }
+
+    .ads {
+        flex-flow: row wrap;
+    }
+
+    .card_body,
+    .flex-start {
+        flex-flow: column wrap;
+    }
+
+    .info_ad {
+        margin-top: 120px;
+    }
+
+    .flex-start {
+        margin-top: 5%;
+        margin-left: 0px;
+    }
+}
